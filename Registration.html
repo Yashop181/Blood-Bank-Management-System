@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="Reg.css">
+    <link rel="icon" href="img/lgo.jpg">
+</head>
+<body>
+    <div class="fire">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Registration.html">Registration</a></li>
+            <li><a href="display.html">Display Donors</a></li>
+            <li><a href="search.html">Search By Name</a></li>
+            <li><a href="delete.html">Delete Record</a></li>
+            <li><a href="edit.html">Edit Donors</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+<div class="start">
+    <h1>Donor Registration</h1>
+</div>
+<br>
+<br>
+
+
+<!-- Form Start -->
+<div class="center">
+    <form action="">
+        <div class="reg">
+            <div class="rakt">
+                <h1>Donor Registration</h1>
+                <p>Donating blood is an act of solidarity. Join the effort and save lives.</p>
+            </div>
+                <img src="https://www.eraktkosh.in/BLDAHIMS/hisglobal/bbpublic/images/Rakt5.png" alt="">
+        </div>
+    <hr>
+        <div class="second">
+            <label for="">Name </label>
+            <br> <input type="text" id="name">
+            <div><label for="">Age</label> <br> <input type="text" id="age"> </div>
+            <div><label for="" id="">Blood Group </label>  
+                <br> 
+                <select name="" id="BloodGroup">
+                <option value="option1">Select Value</option>
+                <option value="AB-Ve">AB-Ve</option>
+                <option value="AB+Ve">AB+Ve</option>
+                <option value="A-Ve">A-Ve</option>
+                <option value="A+Ve">A+Ve</option>
+                <option value="B-Ve">B-Ve</option>
+                <option value="B+Ve">B+Ve</option>
+                <option value="Oh-VE">Oh-VE</option>
+                <option value="Oh+VE">Oh+VE</option>
+                <option value="O-Ve">O-Ve</option>
+                <option value="O+Ve">O+Ve</option>
+                <option value="option11">All Blood Groups</option>
+            </select>   
+            </div>
+            <div> <label for="">Address </label>  <br> <input type="text" id="Address"></div>
+            <div> <label for="">City </label>  <br> 
+            <select name="" id="city"> 
+                <option value="Bhopal">Bhopal</option>
+                <option value="indore">indore</option>
+                <option value="Jabalpur">Jabalpur</option>
+                <option value="Gwalior">Gwalior</option>
+                <option value="Ujjain">Ujjain</option>
+                <option value="Rewa">Rewa</option>
+                <option value="Satna">Satna</option>
+                <option value="Sagar">Sagar</option>
+            </select>
+            </div>
+
+            <div class="">
+                <label for="">Phone No.</label> <br>
+                <input type="number"  min="0" max="10" id="numbb" >
+            </div>
+            
+        </div>
+    <button id="save">SAVE</button>
+    </form>
+</div>
+<!-- Form End -->
+<script src="new/insertdonor.js"></script>
+
+
+<script>
+    function toggleMenu() {
+        var menu = document.querySelector('.fire ul');
+        var toggle = document.querySelector('.menu-toggle');
+        
+        menu.classList.toggle('active');
+        toggle.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>

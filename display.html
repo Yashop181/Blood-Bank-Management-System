@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisplayDonor</title>
+    <link rel="stylesheet" href="display.css">
+    <link rel="icon" href="img/lgo.jpg">
+    
+</head>
+<body>
+    <div class="fire">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Registration.html">Registration</a></li>
+            <li><a href="display.html">Display Donors</a></li>
+            <li><a href="search.html">Search By Name</a></li>
+            <li><a href="delete.html">Delete Record</a></li>
+            <li><a href="edit.html">Edit Donors</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+<div class="mpc">
+    <h1>Blood Donor List</h1>
+</div>
+<br>
+<br>
+<br>
+<div id="demo">
+
+</div>
+
+
+<script src="new/displaydonor.js"></script>
+<script>
+    function toggleMenu() {
+        var menu = document.querySelector('.fire ul');
+        var toggle = document.querySelector('.menu-toggle');
+        
+        menu.classList.toggle('active');
+        toggle.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

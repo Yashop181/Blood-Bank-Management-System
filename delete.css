@@ -1,0 +1,174 @@
+body
+{
+    background-color: #007DFF;
+}
+.for
+{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #ff005e, #f3004f, #e70141, #db0534, #ce0a27, #ce0a21, #ce0c1a, #cd0e12, #d90b0f, #e6070b, #f20306, #ff0000);
+    color: #04D9C1;
+}
+
+button
+{
+    font-size: 24px;
+    background-color: #19B1DF;
+    color: #8019DF;
+    padding: 2px;
+    border-radius: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #7622FF;
+    color: white;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  th {
+    background-color: white;
+    font-weight: bolder;
+  }
+
+  tr:hover {
+    background-color: #DF198B;
+  }
+  
+.fire
+{
+    padding: 10px;
+    background-color: black;
+}
+.fire a
+{
+    text-decoration: none;
+    color: white;
+}
+.fire ul 
+{
+    display: flex;
+    justify-content: space-between;
+}
+.fire ul li 
+{
+    list-style-type: none;
+    font-size: 20px;
+    
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.fire ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 940px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .fire ul {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: black;
+        width: 90%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        display: none;
+    }
+
+    .fire ul.active {
+        display: flex;
+    }
+
+    .fire ul li {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    .fire {
+      position: fixed;
+      top: 0;
+      width: 100%;
+  }
+  .who
+  {
+      margin-top: 20px;
+  }
+  .for
+  {
+    margin-top: 70px;
+  }
+}
+th {
+    background-color: black;
+    font-weight: bolder;
+  }
+
+@media only screen and (max-width: 600px) {
+    table
+    {
+        width: 100%;
+    }
+    th {
+        background-color: black;
+        font-weight: bolder;
+      }
+    th, td {
+      font-size: 10px;
+      height: 60px;
+    }
+  
+    th, td {
+      padding: 8px;
+    }
+    .mpc 
+    {
+        width: 100%;
+    }
+  }
+  @media (max-width: 666px) 
+{
+  html, body
+  {
+    overflow-x: hidden;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}

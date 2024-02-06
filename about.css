@@ -1,0 +1,247 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.fire
+{
+    padding: 10px;
+    background-color: black;
+}
+.fire a
+{
+    text-decoration: none;
+    color: white;
+}
+.fire ul 
+{
+    display: flex;
+    justify-content: space-between;
+}
+.fire ul li 
+{
+    list-style-type: none;
+    font-size: 20px;
+    
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.fire ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 872px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .fire ul {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: black;
+        width: 90%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        display: none;
+    }
+
+    .fire ul.active {
+        display: flex;
+    }
+
+    .fire ul li {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    .fire {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .who
+    {
+        margin-top: 20px;
+    }
+
+}
+.who
+{
+    background-image: url('http://nbtc.naco.gov.in/images/banner/whoareare.jpg');
+    padding: 40px;
+}
+.who h1
+{
+    color: white;
+}
+.who a
+{
+    text-decoration: none;
+    color: white;
+}
+.who h4
+{
+    color: white;
+}
+.ens
+{
+    display: flex;
+    justify-content: center;
+}
+.abt
+{
+    display: flex;
+    justify-content: center;
+}
+
+.line 
+{
+display: flex;
+align-items: center;
+}
+
+.line-before,
+.line-after 
+{
+flex-grow: 1;
+height: 1px;
+background-color: #1AC3A7;
+}
+
+.orga
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.orga a
+{
+    text-decoration: none;
+
+}
+.footer
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.footer img
+{
+    width: 100px;
+}
+.axy
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.hyper
+{
+    display: flex;
+    justify-content: center;
+}
+.hyper a
+{
+    text-decoration: none;
+    color: black;
+}
+.hos
+{
+    display: flex;
+    justify-content: center;
+}
+.hos img
+{
+    width: 50px;
+}
+.last
+{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+}
+
+.last p 
+{
+    color: white;
+}
+.last a
+{
+    color: white;
+    text-decoration: none;
+}
+.all
+{
+    background-color: #40526B;
+}
+.all p 
+{
+    color: white;
+}
+.all a
+{
+    text-decoration: none;
+    color: white;
+}
+.dib
+{
+    border: 2px solid #40526B;
+    padding: 5px;
+}
+.dib 
+{
+    color: white;
+    background-color: #40526B;
+
+}
+@media screen and (max-width: 600px) {
+    .ra
+    {
+        margin-left: 10px;
+    }
+    .axy
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .abt
+    {
+        padding: 10px;
+    }
+    .all
+    {
+        padding: 10px;
+    }
+
+    }

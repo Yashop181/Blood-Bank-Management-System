@@ -1,0 +1,263 @@
+body
+{
+    background-image: linear-gradient(to right top, #65a7eb, #4097f4, #0e86fb, #0073ff, #005dff, #754cf2, #a435e0, #c500ca, #ed00a4, #ff2381, #ff5266, #ff7655);
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 666px) 
+{
+  html, body
+  {
+    overflow-x: hidden;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+/* Form Start */
+
+form 
+{    
+    width: 80%;
+    max-width: 600px; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 10px  10px 30px 10px  wheat;
+}
+.center 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start
+{
+    display: flex;
+    justify-content:center;
+    background-image: linear-gradient(to right top, #ff005e, #f3004f, #e70141, #db0534, #ce0a27, #ce0a21, #ce0c1a, #cd0e12, #d90b0f, #e6070b, #f20306, #ff0000);
+    color: #04D9C1;
+}
+.reg
+{
+    display: flex;
+    justify-content: space-between;
+}
+.second
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.name
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.fni 
+{
+    display: flex;
+    justify-content: center;
+}
+.fni a 
+{
+    border: 2px solid red;
+    border-radius: 20px;
+    background-color: orangered;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.second div
+{
+    margin-bottom: 14px;
+}
+.second input
+{
+    width: 70%;
+    padding: 3px;
+}
+.second select
+{
+    width: 72%;
+    padding: 3px;
+}
+.name select
+{
+    padding: 3px;
+    width: 70%;
+}
+.name input
+{
+    width: 70%;
+    padding: 3px;
+}
+/* Form End */
+
+.fire
+{
+    padding: 10px;
+    background-color: black;
+}
+.fire a
+{
+    text-decoration: none;
+    color: white;
+}
+.fire ul 
+{
+    display: flex;
+    justify-content: space-between;
+}
+.fire ul li 
+{
+    list-style-type: none;
+    font-size: 20px;
+    
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.fire ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 872px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .fire ul {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: black;
+        width: 90%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        display: none;
+    }
+
+    .fire ul.active {
+        display: flex;
+    }
+
+    .fire ul li {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    .fire {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .who
+    {
+        margin-top: 20px;
+    }
+    .start
+    {
+        margin-top: 70px;
+    }
+
+}
+@media screen and (max-width: 900px) {
+body
+{
+    background-color: white;
+}   
+form
+{
+    height: 640px;
+}
+form
+{
+    width: 90%;
+    padding: 30px;
+}
+label
+{
+    font-size: 20px;
+}
+#name
+{
+    width: 70%;
+    padding: 5px;
+}
+#age
+{
+    width: 70%;
+    padding: 5px;
+}
+#BloodGroup
+{
+    width: 74%;
+    padding: 5px;
+}
+#Address
+{
+    width: 70%;
+    padding: 5px;
+}
+#city
+{
+    width: 74%;
+    padding: 5px;
+}
+#numbb
+{
+    width: 70%;
+    padding:5px;
+}
+#save
+{
+    margin-left: 30px;
+}
+.reg img
+{
+    width: 200px;
+}
+
+}
+button
+{
+    padding: 10px;
+    margin-left: 160px;
+    border: 2px solid black;
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: red;
+    background-color: black;
+    font-size: 20px;
+
+}

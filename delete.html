@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeleteDonor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="delete.css">
+    <link rel="icon" href="img/lgo.jpg">
+</head>
+<body>
+    <div class="fire">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Registration.html">Registration</a></li>
+            <li><a href="display.html">Display Donors</a></li>
+            <li><a href="search.html">Search By Name</a></li>
+            <li><a href="delete.html">Delete Record</a></li>
+            <li><a href="edit.html">Edit Donors</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>   
+
+    <div class="for">
+        <h1>Delete Data</h1>
+    </div>
+ 
+
+
+
+    <div id="data">
+
+    </div>
+    
+
+    <script src="new/deletedonor.js"></script>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.fire ul');
+            var toggle = document.querySelector('.menu-toggle');
+            
+            menu.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
